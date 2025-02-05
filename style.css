@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+body header nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    height: 100px;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+body #anasayfa:hover .cizgi{
+    transition: 0.50s;
+    width: 70px;
+}
+
+body .cizgi{
+    height: 3px; 
+    width: 0px; 
+    top: 3px; 
+    background-color: white;
+}
+
+body .socialMedia{
+    display: flex;
+    gap: 10px;
+    left: 60px;
+    color: white;
+}
+
+body .socialMedia i{
+    background-color: lightgray;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+body header nav ul img{
+    right: 150px;
+}
+
+
+body #hakkimizda:hover .cizgi{
+    transition: 0.50s;
+    width: 85px;
+}
+
+body #yatirim:hover .cizgi{
+    transition: 0.50s ease-out;
+    width: 80px;
+}
+
+body #kariyer:hover .cizgi{
+    transition: 0.50s ease-out;
+    width: 53px;
+}
+
+body #basinda:hover .cizgi{
+    transition: 0.50s ease-out;
+    width: 95px;
+}
+
+body #iletisim:hover .cizgi{
+    transition: 0.50s ease-out;
+    width: 47px;
+}
+
+body{
+    background-image: url('imgs/background-main-tr.jpg');
+    background-size: cover;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
