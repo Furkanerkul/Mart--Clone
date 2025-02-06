@@ -60,6 +60,35 @@
             </a>
         </div>
     </footer>
+
+    <script>
+
+        let header = document.querySelector('body header')
+        let nav = document.querySelector('body nav')
+        let navUl = document.querySelectorAll('body header nav ul li a')
+
+        document.addEventListener('scroll', function(){
+            if(parseInt(scrollY) >= 386){
+                document.querySelector('body .scrollTop').style.display = 'block'
+                header.style.position = 'sticky'
+                header.style.top = '0px'
+                nav.style.backgroundColor = 'white'
+                for(let i = 0; i < navUl.length; i++){
+                    navUl[i].style.color = 'black'
+                }
+                document.querySelector('body header nav ul img').src = 'imgs/logo2.png'
+            }
+            else{
+                document.querySelector('body .scrollTop').style.display = 'none'
+                header.style.position = 'static'
+                nav.style.backgroundColor = 'transparent'
+                for(let i = 0; i < navUl.length; i++){
+                    navUl[i].style.color = 'white'
+                }
+                document.querySelector('body header nav ul img').src = 'imgs/logo.png'
+            }
+        })
+    </script>
 </body>
 
 </html>

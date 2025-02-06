@@ -39,6 +39,9 @@ body header nav ul #hakkimizda .kurucumuz {
     position: absolute;
 }
 
+body header{
+    z-index: 1;
+}
 
 body header nav ul #basinda .basinMarti {
     top: 60px;
@@ -239,6 +242,7 @@ body .footerLayout{
 body .scrollTop{
     background-color: rgb(44, 42, 42);
     padding: 15px;
+    display: none;
 }
 
 body .scrollTop:hover{
