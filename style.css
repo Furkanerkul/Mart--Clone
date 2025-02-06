@@ -116,6 +116,11 @@ body #iletisim:hover .cizgi {
     width: 47px;
 }
 
+body header nav ul li #anasayfa{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
 html{
     scroll-behavior: smooth;
 }
