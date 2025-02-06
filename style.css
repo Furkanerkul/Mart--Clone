@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Arial, sans-serif;
     position: relative;
 }
 
-body header nav ul{
+body header nav ul {
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -16,68 +16,235 @@ body header nav ul{
 }
 
 
-body #anasayfa:hover .cizgi{
+body #anasayfa:hover .cizgi {
     transition: 0.50s;
     width: 70px;
 }
 
-body .cizgi{
-    height: 3px; 
-    width: 0px; 
-    top: 3px; 
+body .cizgi {
+    height: 1px;
+    width: 0px;
+    top: 3px;
     background-color: white;
 }
 
-body .socialMedia{
+body header nav ul #hakkimizda .kurucumuz {
+    top: 60px;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    width: 220px;
+    font-size: 13px;
+    opacity: 0;
+    position: absolute;
+}
+
+
+body header nav ul #basinda .basinMarti {
+    top: 60px;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    width: 220px;
+    font-size: 13px;
+    opacity: 0;
+    position: absolute;
+}
+
+body header nav ul #basinda .basinMarti:hover {
+    color: rgb(112, 221, 112);
+}
+
+body header nav ul #basinda:hover .basinMarti {
+    transition: 0.50s;
+    opacity: 1;
+}
+
+body header nav ul #hakkimizda:hover .kurucumuz {
+    transition: 0.50s;
+    opacity: 1;
+}
+
+body header nav ul #hakkimizda .kurucumuz:hover {
+    color: rgb(112, 221, 112);
+}
+
+body .socialMedia {
     display: flex;
     gap: 10px;
     left: 60px;
     color: white;
 }
 
-body .socialMedia i{
+body .socialMedia i {
     background-color: lightgray;
     opacity: 0.8;
     padding: 5px;
     border-radius: 20px;
 }
 
-body header nav ul img{
+body header nav ul img {
     right: 150px;
 }
 
 
-body #hakkimizda:hover .cizgi{
+body #hakkimizda:hover .cizgi {
     transition: 0.50s;
     width: 85px;
 }
 
-body #yatirim:hover .cizgi{
+body #yatirim:hover .cizgi {
     transition: 0.50s ease-out;
     width: 80px;
 }
 
-body #kariyer:hover .cizgi{
+body #kariyer:hover .cizgi {
     transition: 0.50s ease-out;
     width: 53px;
 }
 
-body #basinda:hover .cizgi{
+body #basinda:hover .cizgi {
     transition: 0.50s ease-out;
     width: 95px;
 }
 
-body #iletisim:hover .cizgi{
+body #iletisim:hover .cizgi {
     transition: 0.50s ease-out;
     width: 47px;
 }
 
-body{
+body {
     background-image: url('imgs/background-main-tr.jpg');
+    background-size: contain;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+body .left {
+    right: 510px;
+    top: 120px;
+}
+
+body .left h1 {
+    text-transform: capitalize;
+    font-size: 80px;
+    color: white;
+}
+
+body .logos {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    top: 20px;
+    right: 100px;
+}
+
+body .martiGallery {
+    background-color: black;
+    height: 30vh;
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    margin-top: 20%;
+}
+
+body .martiGallery div {
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+
+body .martiGallery div:nth-child(1) {
+    background-image: url('imgs/gallery1.jpg');
     background-size: cover;
 }
 
-a{
+body .martiGallery div:nth-child(2) {
+    background-image: url('imgs/gallery2.jpg');
+    background-size: cover;
+}
+
+body .martiGallery div:nth-child(3) {
+    background-image: url('imgs/gallery3.jpg');
+    background-size: cover;
+}
+
+body .martiGallery div:nth-child(4) {
+    background-image: url('imgs/gallery4.png');
+    background-size: cover;
+}
+
+body .martiGallery div:nth-child(5) {
+    background-image: url('imgs/gallerry5.jpg');
+    background-size: cover;
+}
+
+
+body .martiGallery i {
+    background-color: white;
+    top: 80px;
+    font-size: 20px;
+    padding: 10px;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+
+body .martiGallery div:hover i {
+    transition: 0.50s;
+    opacity: 1;
+}
+
+body #pictures {
+    bottom: 50px;
+    padding: 10px;
+    background-color: green;
+    border-color: transparent;
     color: white;
-    text-decoration: none;
+    font-weight: bold;
+}
+
+
+body #pictures:hover {
+    transition: 0.50s;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+body footer {
+    background-color: #1a1c20;
+    color: white;
+    height: 25vh;
+}
+
+
+body #footerLine{
+    background-color: #292b30;
+    height: 1px;
+    top: 50px;
+}
+
+body .footerLayout{
+    display: flex;
+    justify-content: space-around;
+    top: 80px;
+}
+
+body .scrollTop{
+    background-color: rgb(44, 42, 42);
+    padding: 15px;
+}
+
+body .scrollTop:hover{
+    opacity: 0.5;
+    transition: 0.50s;
+    bottom: 5px;
+    cursor: pointer;
 }
