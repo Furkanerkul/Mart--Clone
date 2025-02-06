@@ -116,10 +116,13 @@ body #iletisim:hover .cizgi {
     width: 47px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url('imgs/background-main-tr.jpg');
     background-size: contain;
-    scroll-behavior: smooth;
 }
 
 a {
