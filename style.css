@@ -116,9 +116,8 @@ body #iletisim:hover .cizgi {
     width: 47px;
 }
 
-body header nav ul li #anasayfa{
-    text-decoration: underline;
-    text-underline-offset: 10px;
+body header nav ul li #anasayfa .cizgi{
+    width: 70px;
 }
 
 html{
@@ -205,6 +204,7 @@ body .martiGallery i {
     opacity: 0;
     border-radius: 20px;
 }
+
 
 
 body .martiGallery div:hover i {
