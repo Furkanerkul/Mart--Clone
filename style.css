@@ -259,3 +259,126 @@ body .scrollTop:hover{
     bottom: 5px;
     cursor: pointer;
 }
+
+#copytext{
+    font-size: 15px;
+}
+
+#copytext::after{
+    content: ' (CLONE GEREĞİ BU YAZI BURADA)';
+}
+
+body .sideNav{
+    height: 100vh;
+    background-color: white;
+    z-index: 3;
+    float: right;
+    position: sticky;
+    bottom: 0px;
+    padding: 80px;
+    display: none;
+    width: 100px;
+}
+
+body .sideNav table tr td a{
+    color: black;
+}
+
+body .mobileSocial{
+    display: flex;
+    justify-content: center;
+    top: 420px;
+    gap: 10px;
+    left: 30px;
+}
+
+body .mobileSocial i{
+    opacity: 0.8;
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+}
+
+body #sideNavKapat{
+    float: right;
+    bottom: 20px;
+    left: 30px;
+    color: white;
+    background-color: #50b848;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#hamburger{
+    left: 220px;
+    display: none;
+}
+
+#ulasim{
+    left: 20px;
+}
+
+@media(max-width: 500px){
+    nav ul li,body .socialMedia{
+        display: none;
+    }
+
+    body .martiGallery{
+        flex-wrap: wrap;
+        height: 300px;
+        top: 60px;
+    }
+
+    body .martiGallery div{
+        width: 100px;
+        height: 100px;
+    }
+
+    body .martiGallery div:nth-child(5),body .martiGallery div:nth-child(6){
+        display: none;
+    }
+
+    body{
+        background-size: 720px;
+    }
+
+    #copytext::after{
+        content: ' ';
+    }
+
+    body .scrollTop{
+        bottom: 20px;
+    }
+
+    #logo{
+        left: -120px;
+    }
+
+    #hamburger{
+        display: inline;
+    }
+
+    body .left{
+        right: 0px;
+    }
+
+    body .left h1{
+        font-size: 50px;
+        right: 30px;
+    }
+
+    #ulasim{
+        left: 0px;
+    }
+
+
+    footer{
+        top: 50px;
+    }
+
+    .logos{
+        right: -20px;
+    }
+
+}

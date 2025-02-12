@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr-TR">
 
 <head>
     <meta charset="UTF-8">
@@ -14,11 +14,16 @@
     <header>
         <nav>
             <ul type="none">
-                <a href="index.html"><img src="imgs/logo.png" alt="marti-logo"></a>
+                <i class="fa-solid fa-bars" id="hamburger" onclick="document.querySelector('.sideNav').style.display = 'block'"></i>
+                <a href="index.html"><img src="imgs/logo.png" alt="marti-logo" id="logo"></a>
                 <li><a href="index.html" id="anasayfa">Anasayfa <div class="cizgi"></div></a></li>
-                <li><a href="#" id="hakkimizda">Hakkımızda <div class="cizgi"></div> <div class="kurucumuz">Kurucumuz</div></a></li>
+                <li><a href="#" id="hakkimizda">Hakkımızda <div class="cizgi"></div>
+                        <div class="kurucumuz">Kurucumuz</div>
+                    </a></li>
                 <li><a href="#" id="yatirim">Yatırımcılar <div class="cizgi"></div></a></li>
-                <li><a href="#" id="basinda">Basında Martı <div class="cizgi"></div> <div class="basinMarti">Bülten</div></a></li>
+                <li><a href="#" id="basinda">Basında Martı <div class="cizgi"></div>
+                        <div class="basinMarti">Bülten</div>
+                    </a></li>
                 <li><a href="#" id="kariyer">Kariyer <div class="cizgi"></div></a></li>
                 <li><a href="#" id="iletisim">İletişim <div class="cizgi"></div></a></li>
                 <div class="socialMedia">
@@ -30,14 +35,75 @@
                 </div>
             </ul>
         </nav>
+        <div class="sideNav">
+            <i class="fa-solid fa-xmark" id="sideNavKapat" onclick="parentElement.style.display = 'none'"></i>
+            <table cellspacing="20px">
+                <tr>
+                    <td><a href="index.html" style="color: #50b848; font-weight: bold;">Anasayfa</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Hakkımızda</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Yatırımcılar</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Basında Martı</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">Kariyer</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#">İletişim</a></td>
+                </tr>
+                <tr>
+                    <div class="mobileSocial">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-solid fa-rss"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </tr>
+            </table>
+
+
+        </div>
     </header>
     <center>
         <div class="left">
-            <h1>Türkiye'nin <br> <span style="left: 20px;">ulaşım</span>  devi</h1>
-           <div class="logos">
-            <a href="#"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83&releaseDate=1551571200&h=76c72c0b01faf2ff41789f0469e53f94" alt="" height="50px"></a>
-            <a href="#"><img src="imgs/playstore.png" alt="" height="50px" width="190px"></a>
-           </div>
+            <h1>Türkiye'nin <br> <span id="ulasim">ulaşım</span> devi</h1>
+            <div class="logos">
+                <a href="#"><img
+                        src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83&releaseDate=1551571200&h=76c72c0b01faf2ff41789f0469e53f94"
+                        alt="" height="50px"></a>
+                <a href="#"><img src="imgs/playstore.png" alt="" height="50px" width="190px"></a>
+            </div>
         </div>
         <div class="martiGallery">
             <div><i class="fa-solid fa-plus"></i></div>
@@ -51,7 +117,8 @@
         <center><button id="pictures"><i class="fa-regular fa-image"></i> Fotoğraflar</button></center>
         <div id="footerLine"></div>
         <div class="footerLayout">
-            <div style="font-size: 15px;">Her an her yerde. &copy; Copyright 2022 Martı İleri Teknoloji A.Ş. Her Hakkı Saklıdır. (CLONE GEREĞİ BU FOOTER YAZISI BURADA.)</div>
+            <div id="copytext">Her an her yerde. &copy; Copyright 2022 Martı İleri Teknoloji A.Ş. Her Hakkı Saklıdır.
+            </div>
             <div></div>
             <a href="#body">
                 <div class="scrollTop">
@@ -67,25 +134,27 @@
         let nav = document.querySelector('body nav')
         let navUl = document.querySelectorAll('body header nav ul li a')
 
-        document.addEventListener('scroll', function(){
-            if(parseInt(scrollY) >= 150){
+        document.addEventListener('scroll', function () {
+            if (parseInt(scrollY) >= 150) {
                 document.querySelector('body .scrollTop').style.display = 'block'
                 header.style.position = 'sticky'
                 header.style.top = '0px'
                 nav.style.backgroundColor = 'white'
-                for(let i = 0; i < navUl.length; i++){
+                for (let i = 0; i < navUl.length; i++) {
                     navUl[i].style.color = 'black'
                 }
+                document.querySelector('#hamburger').style.color = 'black'
                 document.querySelector('body header nav ul img').src = 'imgs/logo2.png'
                 document.querySelector('body header nav ul li #anasayfa .cizgi').style.backgroundColor = 'green'
             }
-            else{
+            else {
                 document.querySelector('body .scrollTop').style.display = 'none'
                 header.style.position = 'static'
                 nav.style.backgroundColor = 'transparent'
-                for(let i = 0; i < navUl.length; i++){
+                for (let i = 0; i < navUl.length; i++) {
                     navUl[i].style.color = 'white'
                 }
+                document.querySelector('#hamburger').style.color = 'inherit'
                 document.querySelector('body header nav ul img').src = 'imgs/logo.png'
                 document.querySelector('body header nav ul li #anasayfa .cizgi').style.backgroundColor = 'white'
             }
