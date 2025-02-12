@@ -1,4 +1,4 @@
-# NOT: RESPONSIVE DEĞİLDİR.
+# NOT: RESPONSIVE UYUMLUDUR.
 
 https://www.marti.tech/ web sitesinin landing page clone projesini yaptım.
 
